@@ -37,14 +37,14 @@ func DivisaoPorPessoa(emails []string, cesta []ListaMercado) (map[string]int, er
 	resto := total % len(emails)
 
 	for _, DivisaoPorPessoa := range emails {
-		divisaoFinal[DivisaoPorPessoa] += custoTotal
 
-		if custoTotal*len(emails) < total {
-			divisaoFinal[DivisaoPorPessoa] += resto
-			resto -= resto
+		if resto > 0 {
+			divisaoFinal[DivisaoPorPessoa] += custoTotal + 1
+			resto--
+
+		} else {
+			divisaoFinal[DivisaoPorPessoa] += custoTotal
 		}
-
 	}
-
 	return divisaoFinal, nil
 }
