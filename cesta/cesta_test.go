@@ -33,7 +33,7 @@ func TestDivisaoPorPessoa(t *testing.T) {
 				[]ListaMercado{{"cafe", 2, 2000}, {"pão", 2, 500}},
 				[]string{"erika@hotmail.com", "joao@hotmail.com", "paulo@hotmail.com"},
 			},
-			esperado: map[string]int{"erika@hotmail.com": 1667, "joao@hotmail.com": 16667, "paulo@hotmail.com": 1666},
+			esperado: map[string]int{"erika@hotmail.com": 1667, "joao@hotmail.com": 1667, "paulo@hotmail.com": 1666},
 		},
 
 		{
