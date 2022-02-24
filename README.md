@@ -26,5 +26,5 @@ Em seguida dividir entre emails (cada email, representa uma pessoa)
 - Não aceita lista vazia de emails;
 - A inculsão de pelo menos um item na cesta é obrigatório.
 
-(Teste)
+
 
